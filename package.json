@@ -1,0 +1,17 @@
+{
+  "name": "ChoresProject",
+  "version": "1.0.0",
+  "description": "Basic app for assigning chores in a family",
+  "main": "accountServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OSU",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "express-handlebars": "^3.0.0",
+    "request": "^2.80.0"
+  }
+}

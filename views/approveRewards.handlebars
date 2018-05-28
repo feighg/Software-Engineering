@@ -1,0 +1,17 @@
+<link rel='stylesheet' type='text/cess' href='css/style.css' />
+
+<h2>Hello, {{parent}}</h2>
+
+<h4>Choose a Reward to approve</h4>
+<form action='/updateReward' method='post'>
+    Reward Name:
+    <select name="rewards" id="reward-selector" required>
+        {{#each reward}}
+            <option value="{{name}}">{{name}}</option>
+        {{/each}}
+    </select><br>
+    Reward Cost<br>
+    <input type="number" name="rewardValue"><br>
+    <input type="checkbox" name="approveReward" value="approved">Approve<br>
+    <input type="submit" value="Update Reward"><br>
+</form>

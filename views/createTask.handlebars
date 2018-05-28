@@ -1,0 +1,26 @@
+<link rel='stylesheet' type='text/cess' href='css/style.css' />
+
+<h2>Hello, {{parent}}</h2>
+
+<h4>Create a task</h4>
+<form action='/createTask' method='post'>
+    Task Name:<br>
+    <input type="text" name="taskName"><br>
+    Due Date:<br>
+    <input type="date" name="date"><br>
+    Task Status:<br>
+    <input type="checkbox" name="mandatory" value="mandatory">Mandatory<br>
+    <input type="checkbox" name="addTaskHistory" value="addTask">Add to task history<br>
+    Task Value:<br>
+    <input type="number" name="taskValue"><br>
+    Assign to child:
+    <select name="childSelect" id="child-selector" required>
+        <option value="">Select Child</option>
+        {{#each selection}}
+            <option value="{{name}}">{{name}}</option>
+        {{/each}}
+    </select><br>
+
+
+    <input type="submit" value="Create Task">
+</form>

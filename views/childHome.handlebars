@@ -1,0 +1,39 @@
+<h1> Child Home </h1>
+{{msg}}
+<h2>Hello, {{child}}. You have {{points}} pts.</h2>
+<h4>
+    Notifications:<br>
+    <form action = '/removeNotificationChild' method = 'post'>
+    {{#each notification}}
+        <input type="checkbox" name="notID" value="{{id}}">{{description}}: {{taskName}}<br>
+    {{/each}}
+    <input type="submit" name ="Remove" value="Remove Notification">
+     </form>
+    <br><br>
+    Tasks:<br>
+    <form action = '/pendingTasks' method = 'post'>
+    {{#each task}}
+        <input type="checkbox" name="taskID" value="{{id}}">{{name}}<br>
+    {{/each}}
+    <input type="submit" name ="Pending" value="Mark Complete">
+    </form>
+
+    <br><br>
+    Rewards:<br>
+    <form action="/requestReward" method="post">
+        {{#each rewards}}
+            <input type="checkbox" name="reqReward" value="{{name}}">{{name}}
+            <input type="submit" value="Request this reward"><br>
+        {{/each}}
+    </form>
+    <br>
+    or
+    <br>
+    <form action="/createReward">
+        <input type="submit" value="Create custom reward">
+    </form>
+</h4>
+
+<form action='/' method='get'>
+    <input type="submit" value="Home">
+</form>

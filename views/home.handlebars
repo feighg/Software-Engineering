@@ -1,0 +1,21 @@
+<link rel='stylesheet' type='text/css' href='css/style.css' />
+
+<h3>{{msg}}<h3>
+
+<form action="/login" method="post">
+	<fieldset>
+	Username:<br>
+	<input type="text" name="username"> <br>
+	Password:<br>
+	<input name="password" type="password"> <br>
+	<input type="submit" value="Login"> <br>
+	</fieldset>
+</form>
+
+<form action="/createParent" method="post">
+	<input type="submit" value="Create Parent Account">
+</form>
+
+<form action="/createChild" method="post">
+	<input type="submit" value="Create Child Account">
+</form>

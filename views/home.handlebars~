@@ -1,0 +1,10 @@
+<h1>Workout Tracker:</h1>
+<table>
+	<tr>
+		<th>Name:</th>
+		<th>Reps:</th>
+		<th>Weight:</th>
+		<th>Date:</th>
+		<th>lbs:</th>
+	</tr>
+</table>

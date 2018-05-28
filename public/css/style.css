@@ -1,0 +1,28 @@
+table{
+		border-width:thin;
+		border-style:normal;
+}
+th, td{
+		border-style:solid;
+		border-width:thin;
+		padding: 2px;
+}
+
+form{
+	border-style: solid;
+	width: 90%;
+	padding: 10px;
+	margin: 10px;
+}
+h1{
+	font-weight: 500;
+	margin: 0 0 15px 0;
+	font-size: 130%;
+}
+input{
+	padding: 2px;
+	margin: 5px;
+	border-style: solid;
+	border-width: thin;
+}
+

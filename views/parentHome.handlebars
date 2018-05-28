@@ -1,0 +1,47 @@
+<h1> Parent Home </h1>
+{{msg}}
+<h2>Hello, {{parent}}</h2>
+<h4>
+    Notifications:<br>
+    <form action = '/removeNotificationParent' method = 'post'>
+    {{#each notification}}
+        <input type="checkbox" name="notID" value="{{id}}">{{description}}: {{taskName}}<br>
+    {{/each}}
+    <input type="submit" name ="Remove" value="Remove Notification">
+    </form>
+    <br><br>
+    Children:<br>
+    {{#each child}}
+        {{name}}
+        {{#each task}}
+            Task: {{name}}
+        {{/each}} <br>
+    {{/each}}
+    <br><br>
+    Pending Tasks:<br>
+    <form action='/approveTask' method='post'>
+        {{#each task}}
+            <input type="checkbox" name="pending" value="{{id}}">{{name}} - {{value}} pts
+            <input type="submit" name ="approve" value="Approve Task"><br>
+        {{/each}}
+    </form>
+</h4>
+
+<form action='/task' method='post'>
+    Enter UserName:<br>
+    <input type="text" name="username" required><br>
+
+    <input type="submit" value="Go to Create Task">
+</form>
+<br>
+<form action='/reward' method='post'>
+    <input type='submit' value="Approve Rewards">
+</form>
+<br>
+<form action='/previousTasks' method='get'>
+    <input type='submit' value="Task History">
+</form>
+<br>
+<form action='/' method='get'>
+    <input type='submit' value="Home">
+</form>
