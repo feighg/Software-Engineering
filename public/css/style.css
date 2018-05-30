@@ -1,28 +1,74 @@
 table{
-		border-width:thin;
+		border-width:thick;
 		border-style:normal;
+		background-color: #ACECFF;
+		text-align: center;
+		border-color: #00002E;
+		align-content: center;
 }
 th, td{
 		border-style:solid;
 		border-width:thin;
-		padding: 2px;
+		border-color:#00002E;
+		padding: 20px;
+		text-align: center;
 }
 
 form{
+	background-color: lightsteelblue;
 	border-style: solid;
-	width: 90%;
-	padding: 10px;
-	margin: 10px;
+	border-color: darkslategray;
+	text-align: center;
+	width: 30%;
+	padding: auto;
+	margin: auto;
 }
 h1{
 	font-weight: 500;
-	margin: 0 0 15px 0;
 	font-size: 130%;
+	text-align: center;
+	background-color: lightgoldenrodyellow;
+	border-color: darkgoldenrod;
+	border-style: solid;
+	width: 30%;
+	align-self: auto;
+	padding: auto;
+	margin: auto;
 }
+h2{
+	font-weight: 500;
+	margin: 0 0 15px 0;
+	font-size: 200%;
+	text-align: center;
+}
+
+h4{	
+	font-weight: 500;
+	margin: auto;
+	font-size: 120%;
+	text-align: center;
+	border-style: solid;
+	border-color: darkslategray;
+	background-color: lightsteelblue;
+	align-self: auto;
+	padding: auto;
+	width: 30%;
+}
+
 input{
 	padding: 2px;
 	margin: 5px;
 	border-style: solid;
 	border-width: thin;
+	border-color: #00002E;
 }
 
+br{
+	font-weight: 800;
+}
+
+body{
+	text-align: center;
+	align-self: center;
+	vertical-align: auto;
+}
